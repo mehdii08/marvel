@@ -1,0 +1,10 @@
+{
+  "common" : {
+    "app_name" : "Marvel Characters"
+  },
+  "page": {
+    "characters": {
+      "title": "Characters List"
+    }
+  }
+}
