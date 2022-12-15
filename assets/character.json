@@ -1,0 +1,62 @@
+{
+  "id": 1234,
+  "name": "Iron Man 3",
+  "description": "A very good movie",
+  "modified": 1671109191,
+  "resourceURI": "resourceURI",
+  "urls": [
+    {
+      "type": "type",
+      "url": "google.com"
+    }
+  ],
+  "thumbnail": {
+    "path": "https://i.ibb.co/W5gRrFB/shelby",
+    "extension": "png"
+  },
+  "comics": {
+    "available": 109,
+    "returned": 1,
+    "collectionURI": "collectionURI",
+    "items": [
+      {
+        "resourceURI": "resourceURI",
+        "name": "name"
+      }
+    ]
+  },
+  "stories": {
+    "available": 98,
+    "returned": 1,
+    "collectionURI": "collectionURI",
+    "items": [
+      {
+        "resourceURI": "resourceURI",
+        "name": "name",
+        "type": "type"
+      }
+    ]
+  },
+  "events": {
+    "available": 76,
+    "returned": 1,
+    "collectionURI": "collectionURI",
+    "items": [
+      {
+        "resourceURI": "resourceURI",
+        "name": "name"
+      }
+    ]
+  },
+  "series": {
+    "available": 89,
+    "returned": 1,
+    "collectionURI": "collectionURI",
+    "items": [
+      {
+        "resourceURI": "resourceURI",
+        "name": "name"
+      }
+    ]
+  }
+}

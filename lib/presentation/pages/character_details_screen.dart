@@ -13,7 +13,9 @@ class _CharacterDetailsScreenState extends State<CharacterDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(context.t('page.characters.title')),),
+      appBar: AppBar(
+        title: Text(context.t('page.characters.title')),
+      ),
     );
   }
 }

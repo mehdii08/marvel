@@ -6,5 +6,10 @@
     "characters": {
       "title": "Characters List"
     }
+  },
+  "errors": {
+    "network_error" : "Network Error",
+    "request_cancelled_error" : "Request Cancelled Error",
+    "failed" : "Failed"
   }
 }

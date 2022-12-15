@@ -4,17 +4,18 @@ import 'package:flutter_i18next/loaders/file_translation_loader.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marvel_characters/presentation/pages/character_details_screen.dart';
-import 'package:marvel_characters/presentation/pages/character_list/characters_list_screen.dart';
+import 'package:marvel_characters/presentation/pages/characters_screen.dart';
 
 final _router = GoRouter(
   routes: [
     GoRoute(
-      path: CharactersListScreen.route,
-      builder: (context, state) => const CharactersListScreen(),
+      path: CharactersScreen.route,
+      builder: (context, state) => const CharactersScreen(),
     ),
     GoRoute(
       path: CharacterDetailsScreen.route,
-      builder: (context, state) => const CharacterDetailsScreen(/*state.params['userId']*/),
+      builder: (context, state) =>
+          const CharacterDetailsScreen(/*state.params['userId']*/),
     ),
   ],
   debugLogDiagnostics: true,
