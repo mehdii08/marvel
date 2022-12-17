@@ -51,7 +51,8 @@ class ApiHelper {
       return await request();
     } on DioError catch (e) {
       if (e.type == DioErrorType.connectTimeout ||
-          e.type == DioErrorType.receiveTimeout) {
+          e.type == DioErrorType.receiveTimeout ||
+          e.type == DioErrorType.sendTimeout) {
         throw const TimeoutException();
       } else if (e.type == DioErrorType.response && e.response?.data is Map) {
         final response = e.response;
