@@ -15,6 +15,11 @@ class NetworkException extends AppException {
       : super(message: 'errors.network_error', messageIsKey: true);
 }
 
+class TimeoutException extends AppException {
+  const TimeoutException()
+      : super(message: 'errors.timeout_error', messageIsKey: true);
+}
+
 class ServerException extends AppException {
   final int? statusCode;
 

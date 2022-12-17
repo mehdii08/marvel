@@ -11,6 +11,9 @@ class Failure extends Equatable {
     if (exception is NetworkException) {
       return const NetworkFailure();
     }
+    if (exception is TimeoutException) {
+      return const TimeoutFailure();
+    }
     if (exception is ServerException) {
       return ServerFailure(
           message: exception.message, messageIsKey: exception.messageIsKey);
@@ -25,6 +28,11 @@ class Failure extends Equatable {
 class NetworkFailure extends Failure {
   const NetworkFailure()
       : super._(message: 'errors.network_error', messageIsKey: true);
+}
+
+class TimeoutFailure extends Failure {
+  const TimeoutFailure()
+      : super._(message: 'errors.timeout_error', messageIsKey: true);
 }
 
 class ServerFailure extends Failure {
