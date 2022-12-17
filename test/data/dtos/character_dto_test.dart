@@ -17,12 +17,15 @@ void main() {
   const description = '';
   const modified = '2014-04-29T14:18:17-0400';
   const resourceURI = 'http://gateway.marvel.com/v1/public/characters/1011334';
-  const thumbnail = ImageDTO(path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784', extension: 'jpg');
+  const thumbnail = ImageDTO(
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784',
+      extension: 'jpg');
   const comics = ResourcesDTO(
       title: 'Comics',
       available: 1,
       returned: 1,
-      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/comics',
+      collectionURI:
+          'http://gateway.marvel.com/v1/public/characters/1011334/comics',
       items: [
         ResourceDTO(
           resourceURI: 'http://gateway.marvel.com/v1/public/comics/21366',
