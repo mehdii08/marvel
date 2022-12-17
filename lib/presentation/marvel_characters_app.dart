@@ -3,6 +3,7 @@ import 'package:flutter_i18next/i18next_delegate.dart';
 import 'package:flutter_i18next/loaders/file_translation_loader.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:marvel_characters/domain/entities/character.dart';
 import 'package:marvel_characters/presentation/pages/character_details_screen.dart';
 import 'package:marvel_characters/presentation/pages/characters_screen.dart';
 
@@ -15,7 +16,7 @@ final _router = GoRouter(
     GoRoute(
       path: CharacterDetailsScreen.route,
       builder: (context, state) =>
-          const CharacterDetailsScreen(/*state.params['userId']*/),
+          CharacterDetailsScreen(character: (state.extra as Character)),
     ),
   ],
   debugLogDiagnostics: true,
