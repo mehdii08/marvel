@@ -19,7 +19,7 @@ void main() {
   setUp(() {
     registerFallbackValue(Method.get);
     apiHelper = MockApiHelper();
-    dataSource = CharactersRemoteDataSource(apiHelper);
+    dataSource = CharactersRemoteDataSource(api: apiHelper);
   });
 
   test('getCharactersTest', () async {

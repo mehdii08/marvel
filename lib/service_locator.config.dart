@@ -37,9 +37,10 @@ Future<_i1.GetIt> $initGetIt(
   );
   gh.lazySingleton<_i5.ApiHelper>(() => _i5.ApiHelper(get<_i4.Dio>()));
   gh.lazySingleton<_i6.CharactersDataSource>(
-      () => _i7.CharactersRemoteDataSource(get<_i5.ApiHelper>()));
-  gh.lazySingleton<_i8.CharactersRepository>(
-      () => _i9.CharactersRemoteRepository(get<_i6.CharactersDataSource>()));
+      () => _i7.CharactersRemoteDataSource(api: get<_i5.ApiHelper>()));
+  gh.lazySingleton<_i8.CharactersRepository>(() =>
+      _i9.CharactersRemoteRepository(
+          remoteDataSource: get<_i6.CharactersDataSource>()));
   gh.lazySingleton<_i10.GetCharacters>(
       () => _i10.GetCharacters(get<_i8.CharactersRepository>()));
   gh.factory<_i11.CharactersCubit>(

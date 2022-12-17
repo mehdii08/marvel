@@ -6,13 +6,13 @@ import 'package:marvel_characters/data/dtos/character_dto.dart';
 
 @LazySingleton(as: CharactersDataSource)
 class CharactersRemoteDataSource implements CharactersDataSource {
-  final ApiHelper _api;
+  final ApiHelper api;
 
-  const CharactersRemoteDataSource(this._api);
+  const CharactersRemoteDataSource({required this.api});
 
   @override
   Future<List<CharacterDTO>> getCharacters({int? limit, int? offset}) async {
-    final response = await _api
+    final response = await api
         .request('$apiPath/characters', method: Method.get, queryParameters: {
       if (offset != null) 'offset': offset,
       if (limit != null) 'limit': limit,
