@@ -15,7 +15,6 @@ import 'data/data_sources/characters_remote_data_source.dart' as _i7;
 import 'data/repositories/characters_repository.dart' as _i8;
 import 'domain/repositories/characters_remote_repository.dart' as _i9;
 import 'domain/use_cases/get_characters.dart' as _i10;
-import 'presentation/blocs/authentication/authentication_cubit.dart' as _i3;
 import 'presentation/blocs/characters_list/characters_cubit.dart' as _i11;
 import 'service_locator.dart' as _i12; // ignore_for_file: unnecessary_lambdas
 
@@ -32,7 +31,6 @@ Future<_i1.GetIt> $initGetIt(
     environmentFilter,
   );
   final registerModule = _$RegisterModule();
-  gh.lazySingleton<_i3.AuthenticationCubit>(() => _i3.AuthenticationCubit());
   await gh.singletonAsync<_i4.Dio>(
     () => registerModule.resolveDio,
     preResolve: true,

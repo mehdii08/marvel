@@ -18,8 +18,11 @@ Future initSL() async {
 
 Future<Dio> getDio() async {
   final options = BaseOptions(
-    baseUrl: serverUrl,
-  );
+      baseUrl: serverUrl,
+      receiveDataWhenStatusError: true,
+      connectTimeout: 20 * 1000, // 20 seconds
+      receiveTimeout: 20 * 1000 // 20 seconds
+      );
   final dio = Dio(options)..transformer = DefaultTransformer();
   return dio;
 }
