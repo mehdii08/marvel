@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:marvel_characters/domain/entities/image.dart';
-import 'package:marvel_characters/domain/entities/items.dart';
+import 'package:marvel_characters/domain/entities/resources.dart';
 import 'package:marvel_characters/domain/entities/url.dart';
 
 class Character extends Equatable {
