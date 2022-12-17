@@ -1,15 +1,21 @@
 {
   "common" : {
-    "app_name" : "Marvel Characters"
+    "app_name" : "Marvel Characters",
+    "links" : "Links"
   },
   "page": {
     "characters": {
       "title": "Characters List"
+    },
+    "character_details": {
+      "title": "Character Details"
     }
   },
   "errors": {
     "network_error" : "Network Error",
+    "timeout_error" : "Request has timed out",
     "request_cancelled_error" : "Request Cancelled Error",
-    "failed" : "Failed"
+    "failed" : "Failed",
+    "try_again" : "Try again!"
   }
 }
