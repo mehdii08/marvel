@@ -6,11 +6,18 @@ class ResourceDTO extends Equatable {
   final String name;
   final String? type;
 
-  const ResourceDTO(this.resourceURI, this.name, {this.type});
+  const ResourceDTO({
+    required this.resourceURI,
+    required this.name,
+    this.type,
+  });
 
-  factory ResourceDTO.fromJson(Map<String, dynamic> json) {
-    return ResourceDTO(json['resourceURI'], json['name'],
-        type: json.containsKey('type') ? json['extension'] : null);
+  factory ResourceDTO.fromJson({required Map<String, dynamic> json}) {
+    return ResourceDTO(
+      resourceURI: json['resourceURI'],
+      name: json['name'],
+      type: json.containsKey('type') ? json['type'] : null,
+    );
   }
 
   Resource get entity => Resource(resourceURI, name);

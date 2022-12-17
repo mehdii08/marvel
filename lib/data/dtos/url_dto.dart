@@ -5,10 +5,10 @@ class UrlDTO extends Equatable {
   final String type;
   final String url;
 
-  const UrlDTO(this.type, this.url);
+  const UrlDTO({required this.type, required this.url});
 
-  factory UrlDTO.fromJson(Map<String, dynamic> json) {
-    return UrlDTO(json['type'], json['url']);
+  factory UrlDTO.fromJson({required Map<String, dynamic> json}) {
+    return UrlDTO(type: json['type'],url: json['url']);
   }
 
   Url get entity => Url(type, url);

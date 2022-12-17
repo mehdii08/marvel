@@ -10,19 +10,24 @@ class ResourcesDTO extends Equatable {
   final String collectionURI;
   final List<ResourceDTO> items;
 
-  const ResourcesDTO(
-    this.title,
-    this.available,
-    this.returned,
-    this.collectionURI,
-    this.items,
-  );
+  const ResourcesDTO({
+    required this.title,
+    required this.available,
+    required this.returned,
+    required this.collectionURI,
+    required this.items,
+  });
 
-  factory ResourcesDTO.fromJson(String type, Map<String, dynamic> json) {
+  factory ResourcesDTO.fromJson({required String title, required Map<String, dynamic> json}) {
     final items = List<ResourceDTO>.from(
-        json['items'].map((v) => ResourceDTO.fromJson(v)));
-    return ResourcesDTO(type, json['available'], json['returned'],
-        json['collectionURI'], items);
+        json['items'].map((v) => ResourceDTO.fromJson(json: v)));
+    return ResourcesDTO(
+        title: title,
+        available: json['available'],
+        returned: json['returned'],
+        collectionURI: json['collectionURI'],
+        items: items,
+    );
   }
 
   Resources get entity => Resources(title, available, returned, collectionURI,

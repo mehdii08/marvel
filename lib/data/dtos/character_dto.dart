@@ -33,7 +33,7 @@ class CharacterDTO extends Equatable {
   });
 
   factory CharacterDTO.fromJson(Map<String, dynamic> json) {
-    final urls = List<UrlDTO>.from(json['urls'].map((v) => UrlDTO.fromJson(v)));
+    final urls = List<UrlDTO>.from(json['urls'].map((v) => UrlDTO.fromJson(json: v)));
     return CharacterDTO(
       id: json['id'],
       name: json['name'],
@@ -42,13 +42,10 @@ class CharacterDTO extends Equatable {
       resourceURI: json['resourceURI'],
       urls: urls,
       thumbnail: ImageDTO.fromJson(json['thumbnail']),
-      comics: ResourcesDTO.fromJson(
-        'Comics',
-        json['comics'],
-      ),
-      stories: ResourcesDTO.fromJson('Stories', json['stories']),
-      events: ResourcesDTO.fromJson('Events', json['events']),
-      series: ResourcesDTO.fromJson('Series', json['series']),
+      comics: ResourcesDTO.fromJson(title: 'Comics', json:json['comics']),
+      stories: ResourcesDTO.fromJson(title: 'Stories', json:json['stories']),
+      events: ResourcesDTO.fromJson(title: 'Events', json:json['events']),
+      series: ResourcesDTO.fromJson(title: 'Series', json: json['series']),
     );
   }
 
