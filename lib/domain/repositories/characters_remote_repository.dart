@@ -22,15 +22,4 @@ class CharactersRemoteRepository implements CharactersRepository {
       return Left(Failure.fromException(e));
     }
   }
-
-  @override
-  Future<Either<Failure, Character>> getCharacter(
-      {required int characterId}) async {
-    try {
-      final result = await _remoteDataSource.getCharacter(characterId);
-      return Right(result.entity);
-    } on Exception catch (e) {
-      return Left(Failure.fromException(e));
-    }
-  }
 }

@@ -2,7 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:marvel_characters/core/config.dart';
 import 'package:marvel_characters/core/network/api_helper.dart';
 import 'package:marvel_characters/data/data_sources/characters_data_source.dart';
-import 'package:marvel_characters/data/dtos/character.dart';
+import 'package:marvel_characters/data/dtos/characterDTO.dart';
 
 @LazySingleton(as: CharactersDataSource)
 class CharactersRemoteDataSource implements CharactersDataSource {
@@ -19,15 +19,5 @@ class CharactersRemoteDataSource implements CharactersDataSource {
     });
     final result = response.data['data']['results'] as List<dynamic>;
     return result.map((e) => CharacterDTO.fromJson(e)).toList();
-  }
-
-  @override
-  Future<CharacterDTO> getCharacter(int characterId) async {
-    final response = await _api.request(
-      '$apiPath/characters/$characterId',
-      method: Method.get,
-    );
-    final result = response.data['data']['results'] as List<dynamic>;
-    return CharacterDTO.fromJson(result.first);
   }
 }

@@ -7,8 +7,4 @@ abstract class CharactersRepository {
     int? limit,
     int? offset,
   });
-
-  Future<Either<Failure, Character>> getCharacter({
-    required int characterId,
-  });
 }

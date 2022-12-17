@@ -1,7 +1,5 @@
-import 'package:marvel_characters/data/dtos/character.dart';
+import 'package:marvel_characters/data/dtos/characterDTO.dart';
 
 abstract class CharactersDataSource {
   Future<List<CharacterDTO>> getCharacters({int? limit, int? offset});
-
-  Future<CharacterDTO> getCharacter(int characterId);
 }
