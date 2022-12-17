@@ -44,7 +44,7 @@ Future<_i1.GetIt> $initGetIt(
   gh.lazySingleton<_i10.GetCharacters>(
       () => _i10.GetCharacters(get<_i8.CharactersRepository>()));
   gh.factory<_i11.CharactersCubit>(
-      () => _i11.CharactersCubit(get<_i10.GetCharacters>()));
+      () => _i11.CharactersCubit(getCharacters: get<_i10.GetCharacters>()));
   return get;
 }
 

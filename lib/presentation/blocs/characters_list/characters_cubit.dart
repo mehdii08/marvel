@@ -8,7 +8,7 @@ import 'package:marvel_characters/presentation/blocs/characters_list/characters_
 class CharactersCubit extends Cubit<CharactersState> {
   final GetCharacters getCharacters;
 
-  CharactersCubit(this.getCharacters)
+  CharactersCubit({required this.getCharacters})
       : super(const CharactersInitial(characters: []));
 
   fetchData() async {
