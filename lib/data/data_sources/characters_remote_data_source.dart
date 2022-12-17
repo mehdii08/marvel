@@ -2,7 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:marvel_characters/core/config.dart';
 import 'package:marvel_characters/core/network/api_helper.dart';
 import 'package:marvel_characters/data/data_sources/characters_data_source.dart';
-import 'package:marvel_characters/data/dtos/characterDTO.dart';
+import 'package:marvel_characters/data/dtos/character_dto.dart';
 
 @LazySingleton(as: CharactersDataSource)
 class CharactersRemoteDataSource implements CharactersDataSource {
