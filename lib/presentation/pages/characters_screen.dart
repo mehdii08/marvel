@@ -37,7 +37,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
     super.initState();
     _charactersCubit = sl()..fetchData();
     _scrollController.addListener(_onListScrolled);
-    // showErrorDialog(const NetworkFailure());
   }
 
   showErrorDialog(Failure failure) {
@@ -57,7 +56,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                 failure.messageIsKey
                     ? context.t(failure.message!)
                     : failure.message!,
-                style: const TextStyle(color: Colors.red),
+                style: const TextStyle(color: AppColors.red),
               ),
             ),
             const SizedBox(height: 30),
