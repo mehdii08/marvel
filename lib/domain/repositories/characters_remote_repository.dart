@@ -7,16 +7,16 @@ import 'package:marvel_characters/domain/entities/character.dart';
 
 @LazySingleton(as: CharactersRepository)
 class CharactersRemoteRepository implements CharactersRepository {
-  final CharactersDataSource _remoteDataSource;
+  final CharactersDataSource remoteDataSource;
 
-  const CharactersRemoteRepository(this._remoteDataSource);
+  const CharactersRemoteRepository({required this.remoteDataSource});
 
   @override
   Future<Either<Failure, List<Character>>> getCharacters(
       {int? limit, int? offset}) async {
     try {
       final result =
-          await _remoteDataSource.getCharacters(limit: limit, offset: offset);
+          await remoteDataSource.getCharacters(limit: limit, offset: offset);
       return Right(result.map((e) => e.entity).toList());
     } on Exception catch (e) {
       return Left(Failure.fromException(e));

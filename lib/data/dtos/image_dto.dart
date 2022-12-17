@@ -8,7 +8,7 @@ class ImageDTO extends Equatable {
   const ImageDTO({required this.path, required this.extension});
 
   factory ImageDTO.fromJson(Map<String, dynamic> json) {
-    return ImageDTO(path: json['path'],extension: json['extension']);
+    return ImageDTO(path: json['path'], extension: json['extension']);
   }
 
   Image get entity => Image(path, extension);

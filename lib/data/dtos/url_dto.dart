@@ -8,7 +8,7 @@ class UrlDTO extends Equatable {
   const UrlDTO({required this.type, required this.url});
 
   factory UrlDTO.fromJson({required Map<String, dynamic> json}) {
-    return UrlDTO(type: json['type'],url: json['url']);
+    return UrlDTO(type: json['type'], url: json['url']);
   }
 
   Url get entity => Url(type, url);
