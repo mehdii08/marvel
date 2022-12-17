@@ -1,13 +1,15 @@
 import 'package:equatable/equatable.dart';
 import 'package:marvel_characters/domain/entities/resource.dart';
 
-class Items extends Equatable {
+class Resources extends Equatable {
+  final String title;
   final int available;
   final int returned;
   final String collectionURI;
   final List<Resource> items;
 
-  const Items(
+  const Resources(
+    this.title,
     this.available,
     this.returned,
     this.collectionURI,
@@ -15,5 +17,5 @@ class Items extends Equatable {
   );
 
   @override
-  List<Object?> get props => [available, returned, collectionURI, items];
+  List<Object?> get props => [title, available, returned, collectionURI, items];
 }
