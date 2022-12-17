@@ -33,7 +33,8 @@ void main() {
     title: 'Stories',
     available: 1,
     returned: 1,
-    collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/stories',
+    collectionURI:
+        'http://gateway.marvel.com/v1/public/characters/1011334/stories',
     items: [
       ResourceDTO(
         resourceURI: 'http://gateway.marvel.com/v1/public/stories/19947',
@@ -46,7 +47,8 @@ void main() {
     title: 'Series',
     available: 1,
     returned: 1,
-    collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/series',
+    collectionURI:
+        'http://gateway.marvel.com/v1/public/characters/1011334/series',
     items: [
       ResourceDTO(
         resourceURI: 'http://gateway.marvel.com/v1/public/series/1945',
@@ -58,7 +60,8 @@ void main() {
     title: 'Events',
     available: 1,
     returned: 1,
-    collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/events',
+    collectionURI:
+        'http://gateway.marvel.com/v1/public/characters/1011334/events',
     items: [
       ResourceDTO(
         resourceURI: 'http://gateway.marvel.com/v1/public/events/269',
@@ -66,11 +69,13 @@ void main() {
       ),
     ],
   );
-  const urls = [UrlDTO(
+  const urls = [
+    UrlDTO(
       type: 'detail',
       url:
-      'http://marvel.com/characters/74/3-d_man?utm_campaign=apiRef&utm_source=5295c550265a24404f9cace64c971bd6',
-    )];
+          'http://marvel.com/characters/74/3-d_man?utm_campaign=apiRef&utm_source=5295c550265a24404f9cace64c971bd6',
+    )
+  ];
 
   const tCharacterDTO = CharacterDTO(
     id: id,
@@ -99,7 +104,8 @@ void main() {
     urls: List<Url>.from(urls.map((e) => e.entity)),
   );
   test('fromJson', () {
-    final result = CharacterDTO.fromJson(json.decode(fixture('character.json')));
+    final result =
+        CharacterDTO.fromJson(json.decode(fixture('character.json')));
     expect(result, tCharacterDTO);
   });
   test('toEntity', () {

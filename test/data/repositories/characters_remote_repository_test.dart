@@ -34,7 +34,6 @@ void main() {
           limit: any(named: 'limit'),
           offset: any(named: 'offset'),
         )).thenAnswer((_) async => [characterDTO]);
-    // when(() => connectivityStatus.isConnected).thenAnswer((_) async => true);
     await repository.getCharacters(
       limit: 5,
       offset: 0,
