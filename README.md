@@ -1,16 +1,25 @@
-# marvel_characters
+# Marvel Characters
+This repository provides a mobile application sources code developed by Flutter for Android and ios devices. Contains The main page presents a list of Marvel Characters and The details page can be reached by clicking on each item.
 
-A new Flutter project.
+The BloC pattern is used to develop this app. It is one of the most popular patterns to develop Flutter applications. It uses streams but I don't use them to avoid having a complex source but it helps a lot in big projects.
 
-## Getting Started
+The repository pattern is used for data access logic, so the source code can be extended without any modification in old classes.
 
-This project is a starting point for a Flutter application.
+Below are some packages used in the source code : 
+  - go_router to navigating between screens.
+  - flutter_i18next to simplify the i18n process.
+  - get_it to handle dependency injection.
+  - dio to HTTP requests.
+  - flutter_bloc to implement BloC pattern
 
-A few resources to get you started if this is your first Flutter project:
+and some other packages to make development faster and easier. This set of packages does not mean they are the best, but pub likes, popularity and points 
+states that they are used in many projects and do their responsibilities.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The source code contains unit tests for logical parts of it.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The UI could be improved, but due to logical importance and lack of time, I decided to focus on the logic.
+
+In the end, it takes about 24 hours to analyze, plan and develop this app and I'm open to receiving comments about how can I make the source code better.
+
+
+Email to contact : [Mahdi.Mansournia@gmail.com](mahdi.mansournia@gmail.com)
