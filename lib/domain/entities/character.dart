@@ -7,14 +7,14 @@ class Character extends Equatable {
   final int id;
   final String name;
   final String description;
-  final String modified; //todo DateTime
+  final DateTime modified;
   final String resourceURI;
   final List<Url> urls;
   final Image thumbnail;
-  final Items comics;
-  final Items stories;
-  final Items events;
-  final Items series;
+  final Resources comics;
+  final Resources stories;
+  final Resources events;
+  final Resources series;
 
   const Character({
     required this.id,
