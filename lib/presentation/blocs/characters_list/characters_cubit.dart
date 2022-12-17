@@ -20,7 +20,6 @@ class CharactersCubit extends Cubit<CharactersState> {
       limit: lazyLoadLimit,
       offset: state.characters.length,
     ));
-    // emit(CharactersLoadFailed(characters: state.characters, failure: const NetworkFailure()));
     result.fold(
       (l) =>
           emit(CharactersLoadFailed(characters: state.characters, failure: l)),
