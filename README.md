@@ -19,7 +19,7 @@ The source code contains unit tests for logical parts of it.
 
 The UI could be improved, but due to logical importance and lack of time, I decided to focus on the logic.
 
-In the end, it takes about 24 hours to analyze, plan and develop this app and I'm open to receiving comments about how can I make the source code better.
+In the end, it takes about 24 hours(about 6 hours per a day) to analyze, plan and develop this app and I'm open to receiving comments about how can I make the source code better.
 
 
 Email to contact : [Mahdi.Mansournia@gmail.com](mahdi.mansournia@gmail.com)
