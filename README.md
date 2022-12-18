@@ -3,7 +3,7 @@
 Marvel characters demo app
 
 ## Summary
-This repository provides a mobile application sources code developed by __Flutter__ for __Android__ and __iOS__ devices. The main page presents a list of Marvel Characters and The details page can be reached by clicking on each item.
+This repository provides a mobile application sources code developed by __Flutter__ for __Android__ and __iOS__ devices. The main page presents a list of Marvel Characters supporting infinite scrolling and The details page can be reached by clicking on each item.
 
 ### Official Marvel API documents : [Marvel Docs](https://developer.marvel.com/docs)
 
