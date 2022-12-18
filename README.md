@@ -3,7 +3,7 @@
 Marvel characters demo app
 
 ## Summary
-This repository provides a mobile application sources code developed by __Flutter__ for __Android__ and __ios__ devices. Contains The main page presents a list of Marvel Characters and The details page can be reached by clicking on each item.
+This repository provides a mobile application sources code developed by __Flutter__ for __Android__ and __iOS__ devices. Contains The main page presents a list of Marvel Characters and The details page can be reached by clicking on each item.
 
 ### Official Marvel API documents : [Marvel Docs](https://developer.marvel.com/docs)
 
@@ -18,25 +18,25 @@ Below are some packages used in the source code :
 - __dio to HTTP requests__
 - __flutter_bloc to implement BloC pattern__
 
-and some other packages to make development faster and easier. This set of packages does not mean they are the best, but likes, Pub points and popularity state that they are used in many projects and do their responsibilities.
+In addition some other packages to make development faster and easier. This set of packages does not mean they are the best, but number of likes, Pub points and popularity state that they are used in many projects and handle their responsibilities.
 
 The source code contains __Unit tests__ for logical parts of it.
 
-The UI could be improved, but due to logical importance and lack of time, I decided to focus on the logic.
+The UI could be improved, but due to logical importance and lack of enough time, I decided to focus on the logic.
 
-In the end, it takes about 24 hours(about 6 hours per a day) to analyze, plan and develop this app and I'm open to receiving comments about how can I make the source code better.
+Finally, it takes about 24 hours(about 6 hours per a day) to analyze, plan and develop this app and I'm open to receiving comments about how I can make the source code better.
 
 ## Tested Environments
 - MacOS Monterey
     - Android studio Chipmunk
     - Flutter 3.3.8
-    - various ios simulators
-    - various Android emulators
+    - Various iOS simulators
+    - Various Android emulators
 
 - Windows 10
     - Android studio Dolphin
     - Flutter 3.3.0
-    - various Android emulators
+    - Various Android emulators
 
 
 ## Contact
