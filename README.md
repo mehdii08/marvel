@@ -47,4 +47,4 @@ Finally, it takes about 24 hours(about 6 hours per a day) to analyze, plan and d
 
 
 ## Contact
-Email : [Mahdi.Mansournia@gmail.com](mahdi.mansournia@gmail.com)
+Email : [Mahdi.Mansournia@gmail.com](mailto:mahdi.mansournia@gmail.com)
