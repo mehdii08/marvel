@@ -35,13 +35,13 @@ Finally, it takes about 24 hours(about 6 hours per a day) to analyze, plan and d
 
 ## Tested Environments
 - MacOS Monterey
-    - Android studio Chipmunk
+    - Android Studio Chipmunk
     - Flutter 3.3.8
     - Various iOS simulators
     - Various Android emulators
 
 - Windows 10
-    - Android studio Dolphin
+    - Android Studio Dolphin
     - Flutter 3.3.0
     - Various Android emulators
 
